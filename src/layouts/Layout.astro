@@ -25,8 +25,48 @@ const { title, description = "Подробное тактическое руко
     <script is:inline src="https://wow.zamimg.com/js/tooltips.js"></script>
   </head>
   <body>
+    <header class="mobile-header">
+      <button id="menu-toggle" class="menu-toggle-btn" aria-label="Открыть меню">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <span class="mobile-logo-text">WOW TACTICS</span>
+      <div style="width: 24px;"></div>
+    </header>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <div class="app-container">
       <slot />
     </div>
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const overlay = document.getElementById('sidebar-overlay');
+        const container = document.querySelector('.app-container');
+        
+        if (menuToggle && overlay && container) {
+          menuToggle.addEventListener('click', () => {
+            container.classList.toggle('sidebar-open');
+            overlay.classList.toggle('active');
+          });
+          
+          overlay.addEventListener('click', () => {
+            container.classList.remove('sidebar-open');
+            overlay.classList.remove('active');
+          });
+
+          // Close menu when navigating
+          const sidebarLinks = document.querySelectorAll('.boss-item');
+          sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              container.classList.remove('sidebar-open');
+              overlay.classList.remove('active');
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
