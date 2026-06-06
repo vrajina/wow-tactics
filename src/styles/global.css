@@ -229,6 +229,7 @@ body {
   backdrop-filter: blur(12px);
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .hero::before {

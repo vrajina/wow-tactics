@@ -42,7 +42,16 @@ const getTypeClass = (type: string) => {
           
           <div class="boss-phases-box">
             <div class="phases-title">Ключевые фазы и триггеры</div>
-            <p class="phases-text">{boss.criticalPhases}</p>
+            <ul class="phases-list" style="list-style: none; padding: 0; margin: 12px 0 0 0; display: flex; flex-direction: column; gap: 8px;">
+              {boss.criticalPhases.map(phase => (
+                <li style="display: flex; gap: 10px; line-height: 1.5; font-size: 0.95rem; color: var(--text-secondary); align-items: flex-start;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent-purple)" style="flex-shrink: 0; margin-top: 3px;" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  <span>{phase}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         
