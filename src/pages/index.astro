@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { raidOverview, bossesData } from '../data/bosses.js';
+
+// Группировка боссов по кварталам для вывода на главной
+const zones = [
+  { name: "1. Вечноцветущий дол (Vale of Eternal Blossoms)", bosses: bossesData.filter(b => b.zone === "Вечноцветущий дол") },
+  { name: "2. Врата Оргриммара (Gates of Orgrimmar)", bosses: bossesData.filter(b => b.zone === "Врата Оргриммара") },
+  { name: "3. Подземная крепость (Underworld Fortress)", bosses: bossesData.filter(b => b.zone === "Подземная крепость") },
+  { name: "4. Зал Гарроша (Garrosh's Underhold)", bosses: bossesData.filter(b => b.zone === "Зал Гарроша") }
+];
+---
+
+<Layout title="Обзор рейда Осада Оргриммара">
+  <Sidebar />
+  
+  <main class="main-content">
+    <div class="hero">
+      <span class="hero-tag">MoP Classic 25-man Guide</span>
+      <h1 class="hero-title">{raidOverview.title}</h1>
+      <p class="hero-subtitle">{raidOverview.description}</p>
+      
+      <div class="hero-meta">
+        {raidOverview.details.map(detail => (
+          <div class="meta-item">
+            <span class="meta-label">{detail.label}</span>
+            <span class="meta-value">{detail.value}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <h2 class="section-heading">Кварталы рейда и боссы</h2>
+    
+    <div class="roles-grid" style="margin-top: 10px;">
+      {zones.map((zone, idx) => (
+        <div class="role-card" style={`border-top: 4px solid var(--accent-purple);`}>
+          <div class="role-card-header">
+            <div class="role-icon-box" style="background: var(--accent-purple-glow); color: var(--accent-purple);">
+              {idx + 1}
+            </div>
+            <h3 class="role-card-title" style="color: var(--text-primary); font-size: 1.1rem;">{zone.name}</h3>
+          </div>
+          
+          <ul class="checklist">
+            {zone.bosses.map(boss => (
+              <li class="checklist-item" style="align-items: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent-purple)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <a href={`/boss/${boss.id}`} style="color: var(--text-secondary); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-purple)'" onmouseout="this.style.color='var(--text-secondary)'">
+                  <strong>{boss.id}. {boss.name}</strong> <span style="font-size: 0.8rem; color: var(--text-muted);">({boss.englishName})</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>

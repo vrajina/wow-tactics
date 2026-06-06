@@ -1,0 +1,92 @@
+---
+import { bossesData } from '../data/bosses.js';
+
+interface Props {
+  activeId?: number;
+}
+
+const { activeId } = Astro.props;
+
+// Группировка боссов по кварталам
+const zones = [
+  { name: "Вечноцветущий дол", bosses: bossesData.filter(b => b.zone === "Вечноцветущий дол") },
+  { name: "Врата Оргриммара", bosses: bossesData.filter(b => b.zone === "Врата Оргриммара") },
+  { name: "Подземная крепость", bosses: bossesData.filter(b => b.zone === "Подземная крепость") },
+  { name: "Зал Гарроша", bosses: bossesData.filter(b => b.zone === "Зал Гарроша") }
+];
+---
+
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-container">
+      <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 12px; width: 100%;">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/>
+          </svg>
+        </div>
+        <span class="logo-text">WOW TACTICS</span>
+      </a>
+    </div>
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="var(--text-muted)"/>
+      </svg>
+      <input type="text" id="sidebar-search" class="search-input" placeholder="Поиск босса..." autocomplete="off" />
+    </div>
+  </div>
+  
+  <div class="boss-list-container" id="boss-list">
+    {zones.map((zone) => (
+      <div class="sidebar-section">
+        <h3 class="list-section-title">{zone.name}</h3>
+        {zone.bosses.map((boss) => (
+          <a
+            href={`/boss/${boss.id}`}
+            class={`boss-item ${activeId === boss.id ? 'active' : ''}`}
+            data-eng={boss.englishName}
+          >
+            <span class="boss-number">{String(boss.id).padStart(2, '0')}</span>
+            <span class="boss-name">{boss.name}</span>
+          </a>
+        ))}
+      </div>
+    ))}
+  </div>
+</aside>
+
+<script>
+  // Клиентский поиск по списку боссов
+  const searchInput = document.getElementById('sidebar-search') as HTMLInputElement;
+  const sections = document.querySelectorAll('.sidebar-section');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+      
+      sections.forEach(section => {
+        const items = section.querySelectorAll('.boss-item');
+        let visibleCount = 0;
+        
+        items.forEach(item => {
+          const bossName = item.querySelector('.boss-name')?.textContent?.toLowerCase() || '';
+          const bossEngName = item.getAttribute('data-eng')?.toLowerCase() || '';
+          
+          if (bossName.includes(query) || bossEngName.includes(query)) {
+            (item as HTMLElement).style.display = 'flex';
+            visibleCount++;
+          } else {
+            (item as HTMLElement).style.display = 'none';
+          }
+        });
+        
+        // Скрываем заголовок квартала, если все боссы в нем скрыты
+        if (visibleCount === 0 && query !== '') {
+          (section as HTMLElement).style.display = 'none';
+        } else {
+          (section as HTMLElement).style.display = 'block';
+        }
+      });
+    });
+  }
+</script>
