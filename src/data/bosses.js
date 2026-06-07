@@ -341,7 +341,7 @@ export const bossesData = [
   },
   {
     "id": 2,
-    "name": "Падшие защитники",
+    "name": "Павшие защитники",
     "englishName": "The Fallen Protectors",
     "zone": "Вечноцветущий дол",
     "image": "/images/protectors.png",
