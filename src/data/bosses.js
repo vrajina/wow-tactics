@@ -25,7 +25,7 @@ export const bossesData = [
     "zone": "Вечноцветущий дол",
     "image": "/images/immerseus.png",
     "summary": "Босс представляет собой ожившую воду, оскверненную Ша. Бой завязан на шкале Скверны (Corruption), которая изначально равна 100. Цель рейда — снизить шкалу до 0. Глубиний разделяется на множество капель каждый раз, когда его здоровье опускается до 0.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%B8%D0%B9%20Immerseus%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Фаза 1: Босс в центре, рейд стоит рассредоточенно вокруг бассейна. Во время Вихря избегайте вращающихся струй воды.",
@@ -346,7 +346,7 @@ export const bossesData = [
     "zone": "Вечноцветущий дол",
     "image": "/images/protectors.png",
     "summary": "Бой с тремя оскверненными пандаренами: Рук (Rook Stonetoe), Хэ (He Softfoot) и Сунь (Sun Tenderheart). Их ХП должно опускаться равномерно, чтобы они погибли одновременно (в пределах 10 секунд). На 66% и 33% каждый босс активирует фазу 'Отчаянных мер'.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9F%D0%B0%D0%B4%D1%88%D0%B8%D0%B5%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9F%D0%B0%D0%B2%D1%88%D0%B8%D0%B5%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D0%B8%D0%BA%D0%B8%20The%20Fallen%20Protectors%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Каждый босс переходит в фазу Отчаянных мер на 66% и 33% ХП.",
@@ -654,7 +654,7 @@ export const bossesData = [
     "zone": "Вечноцветущий дол",
     "image": "/images/norushen.png",
     "summary": "Игроки начинают бой со 100 единицами Скверны, снижающей наносимый урон по боссу на 50%. Задача — по очереди заходить в золотые лучи, проходить испытание в фазовой комнате, сбрасывать Скверну до 0 (+100% урона по боссу) и убить Слияние Скверны до энрейджа.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9D%D0%BE%D1%80%D1%83%D1%81%D1%85%D0%B5%D0%BD%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9D%D0%BE%D1%80%D1%83%D1%81%D1%85%D0%B5%D0%BD%20Norushen%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Постоянный спавн аддов в реальном мире при прохождении игроками испытаний.",
@@ -957,7 +957,7 @@ export const bossesData = [
     "zone": "Вечноцветущий дол",
     "image": "/images/pride.png",
     "summary": "Игроки накапливают Гордыню от попадания под механики босса. На касте Раздувающаяся гордыня при 100 энергии босса игроки с уровнем Гордыни 25/50/75/100 получают опасные дебаффы. Игрок со 100 Гордыни попадает под контроль разума.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A8%D0%B0%20%D0%93%D0%BE%D1%80%D0%B4%D1%8B%D0%BD%D0%B8%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A8%D0%B0%20%D0%93%D0%BE%D1%80%D0%B4%D1%8B%D0%BD%D0%B8%20Sha%20of%20Pride%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Раздувающаяся гордыня (Swelling Pride): мощное АоЕ при 100 энергии босса.",
@@ -1186,7 +1186,7 @@ export const bossesData = [
     "zone": "Врата Оргриммара",
     "image": "/images/galakras.png",
     "summary": "Двухфазовый бой. На Фазе 1 рейд сдерживает волны аддов на мосту, сбивает осадные машины и постепенно штурмует левую и правую башни. На Фазе 2 Галакрас падает на землю, где танки меняются под огненным дыханием, а рейд делит урон от огненных шаров.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%80%D0%B0%D1%81%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%80%D0%B0%D1%81%20Galakras%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Фаза 1: Осада башен и защита пушек от шаманов-целителей (Tidepriests), знаменосцев (Flagbearers) и костоломов (Bonecrushers).",
@@ -1478,7 +1478,7 @@ export const bossesData = [
     "zone": "Врата Оргриммара",
     "image": "/images/juggernaut.png",
     "summary": "Босс чередует две фазы. Фаза 1 (Штурм) — босс ходит и бьет танков. Фаза 2 (Осада) — неподвижен, отталкивает рейд и бьет мощным АоЕ. Задача — выжить на фазе осады и закрыть взрывающиеся мины.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B9%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%B8%D0%BD%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B9%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%B8%D0%BD%20Iron%20Juggernaut%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Режим Штурма (Фаза 1): Позиционный бой, босс ходит и бьет танков.",
@@ -1785,7 +1785,7 @@ export const bossesData = [
     "zone": "Врата Оргриммара",
     "image": "/images/shamans.png",
     "summary": "Бой с двумя шаманами: Землеломом Харромом (Earthbreaker Haromm) и Связующей волны Кардрис (Wavebinder Kardris). В 25 ХМ используется тактика сплита (разделения боссов). Харром уводится наверх к воротам, Кардрис остается внизу на площади.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5%20%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D1%8B%20%D0%9A%D0%BE%D1%80'%D0%BA%D1%80%D0%BE%D0%BD%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5%20%D1%88%D0%B0%D0%BC%D0%B0%D0%BD%D1%8B%20%D0%9A%D0%BE%D1%80'%D0%BA%D1%80%D0%BE%D0%BD%20Kor'kron%20Dark%20Shaman%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Тотем скверны (Харром) — призывает слизней.",
@@ -2092,7 +2092,7 @@ export const bossesData = [
     "zone": "Врата Оргриммара",
     "image": "/images/nazgrim.png",
     "summary": "Назгрим меняет три стойки. В Defensive Stance (Оборонительная) босс накапливает Ярость при любых атаках по нему. При 100 ярости он кастует Опустошитель или Боевой крик. Рейд должен останавливать ДПС в босса во время защитной стойки и быстро сливать призываемых аддов.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%20%D0%9D%D0%B0%D0%B7%D0%B3%D1%80%D0%B8%D0%BC%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%20%D0%9D%D0%B0%D0%B7%D0%B3%D1%80%D0%B8%D0%BC%20General%20Nazgrim%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Боевая стойка (Battle Stance): Назгрим пассивно накапливает ярость со временем.",
@@ -2330,7 +2330,7 @@ export const bossesData = [
     "zone": "Подземная крепость",
     "image": "/images/malkorok.png",
     "summary": "Босс поглощает все входящее исцеление, превращая его в щит Ancient Barrier. Задача рейда — закрывать фиолетовые круги на полу, уклоняться от ударов босса и пережить Фазу 2 (Blood Rage), когда босс наносит огромный урон перед собой.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9C%D0%B0%D0%BB%D0%BA%D0%BE%D1%80%D0%BE%D0%BA%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9C%D0%B0%D0%BB%D0%BA%D0%BE%D1%80%D0%BE%D0%BA%20Malkorok%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Дыхание И'Шараджа: смертельный взрыв трех секторов.",
@@ -2632,7 +2632,7 @@ export const bossesData = [
     "zone": "Подземная крепость",
     "image": "/images/spoils.png",
     "summary": "Рейд разделяется на две половины и зачищает две независимые комнаты (Могу и Мантиды), открывая ящики и убивая аддов, чтобы заполнить шкалу энергии до 50 на каждой стороне за отведенное время.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B8%20%D0%9F%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%B8%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B8%20%D0%9F%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%B8%20Spoils%20of%20Pandaria%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Комнаты разделены стеной на две половины.",
@@ -2908,7 +2908,7 @@ export const bossesData = [
     "zone": "Подземная крепость",
     "image": "/images/thok.png",
     "summary": "Бой делится на две фазы. Фаза 1 — Ток танкуется, накапливает Оглушительные визги, прерывающие касты и наносящие АоЕ-урон. Фаза 2 — при сбегании рейда Ток впадает в ярость: фиксируется на случайной цели и преследует её. Танк убивает Тюремщика, берёт ключ и открывает клетку, давая боссу элементальные способности.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D0%BE%D0%BA%20%D0%9A%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%A2%D0%BE%D0%BA%20%D0%9A%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9%20Thok%20the%20Bloodthirsty%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Фаза 1: Ток танкуется. Перед боссом — никого (Страшный рёв — АоЕ с дебаффом). Сзади — никого (Удар хвостом). Смена танков на 2 стаках.",
@@ -3150,7 +3150,7 @@ export const bossesData = [
     "zone": "Зал Гарроша",
     "image": "/images/blackfuse.png",
     "summary": "Босс находится на платформе, запускает пилы, ракеты и бомбы. Также работает конвейерная лента, по которой едет смертоносное оружие. Выделенная группа ДД должна прыгать на ленту и уничтожать оружие до того, как оно доедет до платформы.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9F%D0%BB%D0%B0%D0%B2%D1%89%D0%B8%D0%BA%20%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D0%B2%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%9F%D0%BB%D0%B0%D0%B2%D1%89%D0%B8%D0%BA%20%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D0%B2%20Siegecrafter%20Blackfuse%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Шреддеры (Автоматизированные крошшеры) имеют сильный щит.",
@@ -3379,7 +3379,7 @@ export const bossesData = [
     "zone": "Зал Гарроша",
     "image": "/images/klaxxi.png",
     "summary": "Рейд сражается с девятью идеалами Клакси по очереди (по три активных одновременно). Убийство одного идеала полностью исцеляет остальных. Каждый убитый идеал дает игрокам уникальную способность для использования.",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8B%20%D0%9A%D0%BB%D0%B0%D0%BA%D1%81%D0%B8%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8B%20%D0%9A%D0%BB%D0%B0%D0%BA%D1%81%D0%B8%20Paragons%20of%20the%20Klaxxi%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Инъекция Рик'каля спавнит паразитов, которых нужно быстро убивать.",
@@ -3608,7 +3608,7 @@ export const bossesData = [
     "zone": "Зал Гарроша",
     "image": "/images/garrosh.png",
     "summary": "4-фазовый бой (в ХМ). Фаза 1: Сдерживание аддов, звезда. Фаза 2 и 3: Гаррош получает способности И'Шараджа. Контроль разума (Прикосновение И'Шараджа), Осквернение (топоры) и Вихрь И'Шараджа. Переходы в храмы. Фаза 4 (ХМ): Рейд переносится в разрушенный Штормград, механика Злобы (Malice).",
-    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B0%D1%80%D1%80%D0%BE%D1%88%20%D0%90%D0%B4%D1%81%D0%BA%D0%B8%D0%B9%20%D0%9A%D1%80%D0%B8%D0%BA%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
+    "videoLink": "https://www.youtube.com/results?search_query=%D0%9E%D1%81%D0%B0%D0%B4%D0%B0%20%D0%9E%D1%80%D0%B3%D1%80%D0%B8%D0%BC%D0%BC%D0%B0%D1%80%D0%B0%20%D0%93%D0%B0%D1%80%D1%80%D0%BE%D1%88%20%D0%90%D0%B4%D1%81%D0%BA%D0%B8%D0%B9%20%D0%9A%D1%80%D0%B8%D0%BA%20Garrosh%20Hellscream%20%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0",
     "normal": {
       "criticalPhases": [
         "Фаза 1: Сдерживание аддов, звезда.",
